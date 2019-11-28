@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "vscode-extension-webview-angular": [
+        "dist/vscode-extension-webview-angular"
+      ],
+      "vscode-extension-webview-angular/*": [
+        "dist/vscode-extension-webview-angular/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
