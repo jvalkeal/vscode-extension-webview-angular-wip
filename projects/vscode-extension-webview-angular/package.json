@@ -1,5 +1,5 @@
 {
-  "name": "vscode-extension-webview-angular",
+  "name": "@pivotal-tools/vscode-extension-webview-angular",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^8.2.14",
