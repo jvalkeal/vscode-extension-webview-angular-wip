@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 import { Injectable } from '@angular/core';
-import { Observable, Subject, fromEvent, PartialObserver, Subscription } from 'rxjs';
+import { Observable, fromEvent } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -29,11 +29,9 @@ export class VscodeService {
         try {
             this.vscode = acquireVsCodeApi();
             this.events = fromEvent<MessageEvent>(window, 'message');
-            // const eventListener = (message: any) => {
-            //     console.log(`...received...`, message);
-            // };
-            // window.addEventListener('message', eventListener);
         } catch (error) {
+            // think about how to test and run app outside of vscode as this
+            // try/catch is for now because of that
             console.log('Error using vscodeapi', error);
         }
     }

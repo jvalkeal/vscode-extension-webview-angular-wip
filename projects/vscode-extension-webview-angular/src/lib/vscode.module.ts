@@ -17,12 +17,8 @@ import { NgModule } from '@angular/core';
 import { VscodeService } from './vscode.service';
 
 @NgModule({
-  imports: [],
-  declarations: [],
-  entryComponents: [],
   providers: [
       VscodeService
-  ],
-  exports: []
+  ]
 })
 export class VscodeModule { }
